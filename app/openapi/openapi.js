@@ -24,6 +24,9 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
                     }
                 }
             }
@@ -34,6 +37,9 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
                     }
                 }
             }
@@ -44,6 +50,9 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
                     }
                 },
             },
@@ -62,6 +71,9 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
                     }
                 }
             },
@@ -80,6 +92,9 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "409": {
+                        "description": "Music already exist"
                     }
                 },
                 "requestBody" : {
@@ -99,14 +114,17 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "404": {
+                        "description": "Not Found"
                     }
-                }
-            },
-            "requestBody" : {
-                "content" : {
-                    "application/json" : {
-                        "schema" : {
-                            "$ref" : "#components/schemas/Music"
+                },
+                "requestBody" : {
+                    "content" : {
+                        "application/json" : {
+                            "schema" : {
+                                "$ref" : "#components/schemas/Music"
+                            }
                         }
                     }
                 }
@@ -126,6 +144,9 @@ const swaggerDoc = {
                 "responses": {
                     "200": {
                         "description": "OK"
+                    },
+                    "404": {
+                        "description": "Not Found"
                     }
                 }
             },

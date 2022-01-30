@@ -25,15 +25,13 @@ const schema = {
                 "format" : "date-time"
             },
             "styles": {
-                "types" : "array",
+                "type" : "array",
                 "items" : {
-                    "oneOf" : {
-                        "type" : "string"
-                    }
+                    "type" : "string"
                 }
             },
             "picture" : {
-                "types" : "string"
+                "type" : "string"
             }
         }
     }
