@@ -1,0 +1,26 @@
+[
+  {
+    "title": "War",
+    "description": "",
+    "album" : "13 Voices",
+    "artist" : "Sum 41",
+    "duration" : "3:29 min",
+    "style": [
+      "Alternative Rock",
+      "Rock"
+    ],
+    "picture" : "war.jpg"
+  },
+  {
+    "title": "Boulevard of Broken Dream",
+    "description": "",
+    "album" : "American Idiot",
+    "artist" : "Green Day",
+    "duration" : "4:20 min",
+    "style": [
+      "Alternative Rock",
+      "Rock"
+    ],
+    "picture" : "boulevard_of_broken_dreams.jpg"
+  }
+]
