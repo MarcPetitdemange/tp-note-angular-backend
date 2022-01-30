@@ -1,5 +1,5 @@
 import {AbstractServerModule} from "../../tpnote-backend/AbstractServerModule.js";
-import {User} from "../../tpnote-backend/metier/user.js";
+import {ApiRestMusics} from "./apiRestMusics.js";
 
 class RESTModule extends AbstractServerModule{
     constructor(name, app, port) {
@@ -7,23 +7,20 @@ class RESTModule extends AbstractServerModule{
     }
 
     manageRoutes(){
-        this.app.get("/users",(req,res) => {
-            User.find({},(err, users) => {
-                return res.send(JSON.parse(JSON.stringify(users)));
-            });
-        });
+        //GET
+        this.app.get("/musics/",ApiRestMusics.listAll);
+        this.app.get("/musics/random",ApiRestMusics.findRandom);
+        this.app.get("/musics/title/:title",ApiRestMusics.findByTitle);
+        this.app.get("/musics/:id",ApiRestMusics.findByID);
 
-        this.app.get("/users/:name",(req,res) => {
-            User.find({name: {$regex: req.params.name, $options: 'i'}},(err, users) => {
-                return res.send(JSON.parse(JSON.stringify(users)));
-            });
-        });
+        //POST
+        this.app.post("/musics",ApiRestMusics.create);
 
-        this.app.get("/countUsers",(req, res) => {
-            User.countDocuments({}, (err, nbUsers) => {
-                return res.send("" + nbUsers);
-            });
-        })
+        //PUT
+        this.app.put("/musics/:id",ApiRestMusics.update);
+
+        //DELETE
+        this.app.delete("/musics/:id",ApiRestMusics.deleteById);
     }
 
 }
