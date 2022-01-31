@@ -31,7 +31,8 @@ const schema = {
                 }
             },
             "picture" : {
-                "type" : "string"
+                "type" : "string",
+                "contentEncoding": "base64"
             }
         }
     }
