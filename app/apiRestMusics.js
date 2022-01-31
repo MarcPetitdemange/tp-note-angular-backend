@@ -1,6 +1,11 @@
 import * as LIST_MUSICS from "../data/music.json";
+import {base64_encode} from "./utils/encodingUtils.js";
 
 var MUSICS = [...LIST_MUSICS["default"]];
+MUSICS.map(music =>{
+    music.picture = base64_encode(music.picture);
+})
+
 
 class ApiRestMusics {
 

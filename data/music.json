@@ -40,7 +40,7 @@
       "Hard Rock",
       "Blues Rock"
     ],
-    "picture" : "boulevard_of_broken_dreams.jpg"
+    "picture" : "highway_to_hell.jpg"
   },
   {
     "id": "4",
@@ -67,6 +67,6 @@
     "styles": [
       "Rap"
     ],
-    "picture" : "customize.jpg"
+    "picture" : "moulaga.jpg"
   }
 ]
