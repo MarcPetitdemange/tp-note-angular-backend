@@ -1,4 +1,4 @@
-import * as LIST_MUSICS from "../data/music.json";
+import * as LIST_MUSICS from "../data/music.json" assert {type:"json"};
 import {base64_encode} from "./utils/encodingUtils.js";
 
 var MUSICS = [...LIST_MUSICS["default"]];
