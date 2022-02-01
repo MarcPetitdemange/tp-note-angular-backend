@@ -1,4 +1,4 @@
-import {AbstractServerModule} from "../../tpnote-backend/AbstractServerModule.js";
+import {AbstractServerModule} from "./AbstractServerModule.js";
 import {ApiRestMusics} from "./apiRestMusics.js";
 
 class RESTModule extends AbstractServerModule{
