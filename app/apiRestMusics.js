@@ -1,7 +1,12 @@
-import * as LIST_MUSICS from "../data/music.json";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const LIST_MUSICS = require("../data/music.json");
+
+
+// import * as LIST_MUSICS from "../data/music.json";
 import {base64_encode} from "./utils/encodingUtils.js";
 
-var MUSICS = [...LIST_MUSICS["default"]];
+var MUSICS = [...LIST_MUSICS];
 MUSICS.map(music =>{
     music.picture = base64_encode(music.picture);
 })
